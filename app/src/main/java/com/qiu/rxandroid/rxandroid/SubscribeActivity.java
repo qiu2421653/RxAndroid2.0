@@ -110,6 +110,7 @@ public class SubscribeActivity extends AppCompatActivity {
 				.map(new Function<String, Drawable>() {
 					@Override
 					public Drawable apply(@NonNull String s) throws Exception {
+						Thread.sleep(2000);
 						//方式一读取Asset下图片
 						InputStream in = getAssets().open(s);
 						//方式二读取Asset下图片
